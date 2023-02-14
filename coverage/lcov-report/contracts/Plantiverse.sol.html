@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts\Plantiverse.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> Plantiverse.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>13/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>9/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>17/17</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">31×</span>
+<span class="cline-any cline-yes">30×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-yes">28×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">33×</span>
+<span class="cline-any cline-yes">31×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: Unlicense
+&nbsp;
+pragma solidity 0.8.18;
+// @author Plantiverse (Cristian Richarte Gil)
+// @title Plantiverse NFT collection
+&nbsp;
+import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
+import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155URIStorage.sol";
+&nbsp;
+contract Plantiverse is IERC1155, ERC1155URIStorage{
+&nbsp;
+    address public owner;
+    uint256 public nFTcount; // First NFT collection minted will be 1.
+&nbsp;
+    event NFTMinted(address indexed minter, uint256 nftId, uint256 amount, uint256 mintingTime);
+    event FundsWithdrawn(address indexed caller, address indexed to, uint256 amount, uint256 updateTime);
+    event MintingFeeUpdated(uint256 newMintingFee, uint256 updateTime);
+    event BaseURIUpdated(string newBaseURI, uint256 updateTime);
+    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+&nbsp;
+&nbsp;
+    modifier onlyOwner{
+        require(msg.sender == owner, "You are not the Owner");
+        _;
+    }
+&nbsp;
+    /** 
+     * @param baseURI_: Base URI where the NFTs Metadata is Stored. // Example: https://cristianricharte6.github.io/metadata/
+     */
+    constructor(string memory baseURI_) ERC1155(baseURI_){
+        _setBaseURI(baseURI_);
+        owner = msg.sender;
+    }
+    
+    /**
+     * @dev Individual minting function. It will mint only 1 NFT per call, but you can create as many copies as you want.
+     * @param _copies: Total amount of NFTs copies we want to mint. (Same NFT Collection)
+     */
+    function mint(uint256 _copies) external onlyOwner{
+        ++nFTcount;
+        uint256 count = nFTcount;
+        _setURI(count, Strings.toString(count));
+        _mint(msg.sender, count, _copies, "");
+        emit NFTMinted(msg.sender, count, _copies, block.timestamp);
+    }
+&nbsp;
+    /**
+     * @dev Setter for Base URI.
+     * @param newBaseURI: New Base URI to set.
+     */
+    function updateBaseURI(string memory newBaseURI) external <span class="missing-if-branch" title="else path not taken" >E</span>onlyOwner{
+        _setBaseURI(newBaseURI);
+&nbsp;
+        emit BaseURIUpdated(newBaseURI, block.timestamp);
+    }
+&nbsp;
+    /**
+     * @dev Transfers ownership of the contract to a new account (`newOwner`).
+     * @param newOwner: New contract Owner to set.
+     */
+    function transferOwnership(address newOwner) external <span class="missing-if-branch" title="else path not taken" >E</span>onlyOwner{
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(newOwner != address(0), "Not a valid address");
+        address oldOwner = owner;
+        owner = newOwner;
+        emit OwnershipTransferred(oldOwner, newOwner);
+    }
+&nbsp;
+    /**
+     * @dev Getter for the BASE URI &amp; TOKEN URI concatenated.
+     * @param _nFTCollection: NFT Collection Identifier.
+     *
+     * This enables the following behaviors:
+     *
+     * - if `_tokenURIs[tokenId]` is set, then the result is the concatenation
+     *   of `_baseURI` and `_tokenURIs[tokenId]` (keep in mind that `_baseURI`
+     *   is empty per default);
+     *
+     * - if `_tokenURIs[tokenId]` is NOT set then we fallback to `super.uri()`
+     *   which in most cases will contain `ERC1155._uri`;
+     *
+     * - if `_tokenURIs[tokenId]` is NOT set, and if the parents do not have a
+     *   uri value set, then the result is empty.
+     */   
+    function uri(uint256 _nFTCollection) public view override(ERC1155URIStorage) returns (string memory) {
+        require(_nFTCollection != 0 &amp;&amp; nFTcount &gt;= _nFTCollection, "Wrong NFT Collection");
+        return string(abi.encodePacked(ERC1155URIStorage.uri(_nFTCollection),".json"));
+    }
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Feb 14 2023 13:47:14 GMT+0100 (hora estándar de Europa central)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
