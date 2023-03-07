@@ -1,4 +1,4 @@
-# 🌱 Soft MultiToken Smart Contract (Plantiverse)
+# Soft MultiToken Smart Contract (Plantiverse)
 <img width="800" alt="Captura de pantalla 2023-03-07 212628" src="https://user-images.githubusercontent.com/102038261/223544422-5801ab1e-c00f-4d08-90c8-accffb60795f.png">
 
 ## Mainnet
@@ -23,6 +23,7 @@ Then we need to add the Token path -> /<TOKEN ID>.json
 - <a href="https://www.plantiver.se/">Plantiverse.se</a>
 
 - <a href="https://docs.google.com/document/d/1d18uPIR33CRtEjJilKW2X8munxFJzUSGNtq1g_zMs38/edit">MWC Plantiverse Informe</a>
+------------
 
 ## Contract tested through:
 
@@ -32,11 +33,8 @@ Then we need to add the Token path -> /<TOKEN ID>.json
 - Compatibility with Marketplaces. ✅
 - Unit tests. ✅
 - Solidity coverage. ✅ (100%)
-
-## Missing:
-
-- Unit tests for Events.
-
+------------
+  
 ## Functions / Operations
 
 **Getters and Read-only operations** 📖
