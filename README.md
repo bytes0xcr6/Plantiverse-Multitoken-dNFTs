@@ -1,15 +1,22 @@
 # 🌱 Soft MultiToken Smart Contract (Plantiverse)
+<img width="800" alt="Captura de pantalla 2023-03-07 212628" src="https://user-images.githubusercontent.com/102038261/223544422-5801ab1e-c00f-4d08-90c8-accffb60795f.png">
 
+## Mainnet
+- Contract address (Mumbai Testnet): 0xcb01D92e38bF87f2A7911a702ed7539d1921F9Af
+- <a href="https://opensea.io/collection/plantiverse">OpenSea Mainnet collection</a>
+
+## Testnet
 - Contract address (Mumbai Testnet): 0xe5DcAc668d0a47Dbeb9127755e455AD893D3c257
 - <a href="https://testnets.opensea.io/es/collection/plantiverse">OpenSea TestNet collection</a>
+-------
 
-### Metadata endpoint
+## Metadata URI & Endpoint 
 
-NFTs are pointing to a BASE URL -> cristianRicharte6.github.io/
+NFTs are pointing to a BASE URL -> https://nftplantiverse.s3.eu-central-1.amazonaws.com/Plants/
 
-Then we need to add the Token path -> metadata/<TOKEN ID>.json
+Then we need to add the Token path -> /<TOKEN ID>.json
 
-**Example of BASE URL & Token Path concatenated:** <a href="cristianricharte6.github.io/metadata/0.json">cristianricharte6.github.io/metadata/0.json</a>
+**Example of BASE URL & Token Path concatenated:** <a href="https://nftplantiverse.s3.eu-central-1.amazonaws.com/Plants/1.json">https://nftplantiverse.s3.eu-central-1.amazonaws.com/Plants/1.json</a>
 
 ## More links:
 
